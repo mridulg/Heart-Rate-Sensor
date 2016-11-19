@@ -193,9 +193,9 @@ MAIN:
     CLR EN ; disable lcd temporarily while we do other stuff
     CLR RS ; selects the command register for sending a command to the LCD
     SETB RW ; read mode
-    MOV P2, #0FFh ; move 17 to P2
+    MOV P2, #0FFh ; move 255 to P2
     SETB EN 
-    MOV A, P2 ; move 17 to A
+    MOV A, P2 ; move 255 to A
     JB ACC.7, DELAY ; until the 7th bit of accumulator remains 1, keep repeating
 
     CLR EN ; enable lcd again ( it was given a high pulse earlier )
@@ -232,6 +232,4 @@ MAIN:
     DB 53D  ; DB5
     DB 54D  ; DB6
     DB 55D  ; DB7
-    DB 56D  ; DB8
-    DB 57D  ; DB9
 END
