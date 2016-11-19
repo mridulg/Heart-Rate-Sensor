@@ -1,3 +1,12 @@
+; Heart Rate Monitor
+; Group Members:
+; Aditya Adhikary (2015007)
+; Ajay Balasubramanian (2015008)
+; Mridul Gupta (2015061)
+; Nambiar Pranav (2015063)
+; Sanidhya Singal (2015085)
+
+
 RS EQU P1.0 ; lcd pins being declared as constants
 RW EQU P1.1
 EN EQU P1.2
@@ -232,6 +241,6 @@ MAIN:
     DB 53D  ; DB5
     DB 54D  ; DB6
     DB 55D  ; DB7
-    DB 56D
-    DB 57D
+    DB 56D  
+    DB 57D  
 END
