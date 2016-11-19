@@ -232,4 +232,6 @@ MAIN:
     DB 53D  ; DB5
     DB 54D  ; DB6
     DB 55D  ; DB7
+    DB 56D
+    DB 57D
 END
